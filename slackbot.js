@@ -28,7 +28,7 @@ var messageHandler = function(message){
   });
 };
 
-bot.on("start", (err) =>{
+bot.on("start", function (err) {
   if (err) throw new Error("Could not connect to slack");
   console.log("Connected successfully :)");
   bot.on("message", function (msg) {
